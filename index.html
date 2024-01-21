@@ -880,7 +880,7 @@
                     <div class="details">
                         <div class="input-box" style="width: 100%;">
                             <span class="details_span">Nickname do Membro</span>
-                            <input id="nickname_saída" name="nickname_saída" type="text" placeholder="Nickname do membro saindo da subcompanhia" required>                 
+                            <input id="nickname_saída" name="nickname_saída" type="text" placeholder="Nickname do membro saindo do subgrupo" required>                 
                         </div>
                         <div class="input-box" style="width: 100%;" id="saida_perm">
                             <span class="details_span">Permissão</span>
@@ -1060,7 +1060,7 @@
                         </div>
                         <div class="check-box">
                             <input id="confirmar_attlist" name="confirmar_attlist" type="checkbox" value= null onchange="ValidaCheckBox('confirmar_attlist')">     
-                                <label id="confirmar_attlist" for="confirmar_attlist">Afirmo estar ciente de que esse requerimento é reservado ao ministério da subcompanhia.</label><br>
+                                <label id="confirmar_attlist" for="confirmar_attlist">Afirmo estar ciente de que esse requerimento é reservado a liderança do subgrupo.</label><br>
                         </div>
                         <div class="button">
                             <input type="submit" id="enviar_attlist" value="Enviar">
@@ -1194,7 +1194,7 @@ function fill_entradas(e){
         if($('#necessidade_novos').val() == 3){var necessidade = "[b]✕[/b] Policiais precisam ser adicionados no subfórum e no emblema."}
         if($('#necessidade_novos').val() == 4){var necessidade = "[b]✓[/b] Policiais já adicionados no emblema e subfórum."}
  
-      var texto = "[font=Lexend Deca][size=15][color=#4F7ECD][b]ENTRADA NA SUBCOMPANHIA[/b][/color][/size]\n" + lista + "\n\n" + necessidade + "[/font]";
+      var texto = "[font=Lexend Deca][size=15][color=#4F7ECD][b]ENTRADA NO SUBGRUPO[/b][/color][/size]\n" + lista + "\n\n" + necessidade + "[/font]";
          
         document.getElementById('fa-generated-message').value = texto;
         send_data('novo_membro');
